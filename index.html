@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Portfólio pessoal</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <!-- Links de referencia para um local da pagina -->
+          <li><a href="#sobre">Sobre mim</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--  inicio das seções -->
+
+    <section id="sobre">
+      <img src="/img/perfil/perfil2.jpg" alt="perfil" class="foto-perfil" />
+      <!-- Imagem de perfil -->
+      <h1>Sobre mim</h1>
+      <!-- Título da seção "Sobre mim" -->
+      <h4>
+        <p>
+          Olá, sou Tamirys Regis, tenho 29 anos e sou natural de Cuiabá, Mato
+          Grosso. Atualmente, moro em Curitiba, PR. Em outubro de 2022, comecei
+          minha jornada na área da tecnologia.
+        </p>
+        <p>
+          Antes disso, acumulou 9 anos de experiência em vendas, incluindo 3
+          anos como Gerente de Loja em Cuiabá-MT, liderando uma equipe de 10
+          funcionárias.
+        </p>
+        <p>
+          Desde então, tenho me focado em explorar o mundo da tecnologia,
+          especialmente em Front-end. Além disso, tenho paixão por desenho como
+          hobby e sou fã de Animes e cultura Geek.
+        </p>
+      </h4><br><hr><br><br>
+      <!-- Parágrafo de texto -->
+      <!-- Linha horizontal para reparar a seção-->
+    </section>
+
+    <section id="formacao">
+      <h1>Formação Educacional</h1>
+      <!-- Título da seção "Formação" -->
+      <img src="/img/fundo-de-tela/diploma cartoon.png" class="foto-diploma" />
+      <h4>
+        <p>
+          Graduando em Analise e Desenvolvimento De Sistemas pela Uninter com
+          termino em 2025 <br />
+        </p>
+      </h4>
+
+      <h3>Idiomas</h3>
+      <h4>
+        Inglês: Proficiente em uso instrumental para tarefas especializadas e
+        comunicação.
+      </h4><br>
+      <hr><br><br>
+    </section>
+
+    <section id="portfolio">
+      <h1>Portfolio</h1>
+      <img src="img/fundo-de-tela/projeto cartoon.png" class="foto-projeto" />
+      <h4>
+        <p>
+          Como parte do meu aprimoramento em HTML, CSS e JavaScript, desenvolvi dois
+          projetos distintos: um jogo de adivinhação de números e um projeto
+          envolvendo a animação de botões. Ambos foram incluídos com o objetivo
+          de fortalecer minhas habilidades na manipulação e animação de
+          elementos.
+        </p>
+        <p>  <!-- links para os projetos -->
+           Confira nos Links a baixo: <br /> 
+          <a href="https://botoesanimados.netlify.app" target="_blank"
+            >Projeto botões animados</a
+          ><br />
+          <a href="https://jogoadivinheonumero.netlify.app" target="_blank"
+            > Projeto Jogo adivinhe o número</a>
+        </p>
+      </h4>
+      <br>
+      <hr>
+      <br>
+    </section> <!-- inicio da seção de contato -->
+    <section id="contato">
+      <h6>Gostou de me conhecer? &#x2764;&#xFE0F; </h6>
+        <h4>
+        Se tiver alguma dúvida no layout, uma sugestão para deixar tudo mais
+        "responsive" ou até mesmo um projeto "front-end" maneiro, entre em
+        contato pelo formulário abaixo.🖌️🗨️ </h4>
+      <h1>Contato</h1>
+      <p></p>
+      <form>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" nome="nome" required />
+        <!-- Campo de entrada para o nome -->
+        <br />
+        <label for="email">Email</label>
+        <input type="email" id="email" nome="email" required />
+        <!-- Campo de entrada para o email -->
+        <br />
+        <label for="mensagem">Mensagem:</label><br />
+        <textarea
+          id="mensagem"
+          nome="mensagem"
+          rows="4"
+          cols="50"
+          required
+        ></textarea>
+        <!-- Campo de entrada para a mensagem -->
+        <br />
+        <input type="submit" value="Enviar" />
+        <!-- Botão de envio do formulário -->
+      </form>
+      <br>
+      <br>
+    </section>
+
+    <!--     Fim das seções  -->
+
+    <div id="container">
+      <a href="#" id="scrollButton">
+        <img src="/img/icons/seta para cima.png" alt="Seta para cima" />
+        <!-- Imagem da seta para cima -->
+      </a>
+    </div>
+
+    <!-- Botão de scroll  -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var scrollButton = document.getElementById("scrollButton");
+
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 200) {
+            scrollButton.style.display = "block"; // Exibir o botão de rolagem quando o usuário rolar mais de 200 pixels
+          } else {
+            scrollButton.style.display = "none"; // Ocultar o botão de rolagem quando o usuário estiver no topo
+          }
+        });
+
+        scrollButton.addEventListener("click", function (e) {
+          e.preventDefault();
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth", // Rolagem suave de volta ao topo
+          });
+        });
+      });
+    </script>
+                          <!--  Rodapé da pagina  -->
+    <footer class="rodape"><p>&copy; 2023 tamirys Regis.</p></footer>
+  </body>
+</html>
+        <!-- fim!! -->

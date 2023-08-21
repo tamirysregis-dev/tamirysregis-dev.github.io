@@ -1,0 +1,217 @@
+/* Importa a fonte Poppins do Google Fonts para uso no site */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* Estilos para o corpo do documento */
+body {
+  font-family: "Poppins", sans-serif; /* Define a fonte do texto */
+  margin: 0px; 
+  padding: 0px; 
+  background-image: url("/img/fundo-de-tela/fundo_cerejeira.png"); /* Define uma imagem de fundo */
+  background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
+}
+
+/* Configurações para todo o documento HTML */
+html {
+  scroll-behavior: smooth; /* rolagem suave da página*/
+}
+
+/* Estilos para o cabeçalho da página */
+header {
+  padding: 1px;
+}
+
+
+/* Estilos para a imagem de perfil */
+.foto-perfil {
+  height: 180px; 
+  width: 180x; 
+  border-radius: 70%; 
+  margin: 1% auto;
+}
+
+/* Estilos para a barra de navegação */
+nav {
+  background: linear-gradient(
+    rgba(180, 32, 148, 0.342),
+    transparent); /* Gradiente de fundo */
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+  box-shadow: #813263;
+  padding: 10px;
+  margin: 0px;
+  font-size: larger;
+}
+
+/* Estilos para a lista de navegação */
+nav ul {
+  list-style: none; 
+  margin: 0;/* Remove marcadores de lista */
+  padding: 0;/* Remove preenchimento */
+  display: flex; /* Exibe os itens da lista em uma linha flexível */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+
+
+/* Estilos para os links na barra de navegação */
+nav a {
+  text-decoration: none; 
+  border-bottom: 3px solid transparent; /* Borda inferior transparente nos links */
+  transition: color 0.3s; 
+  box-shadow: #000000;
+  text-align: center;
+}
+
+/* Estilos para os links na lista de navegação */
+nav ul li a {
+  margin: 10px 15px; 
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Estiliza os links de navegação quando o mouse está sobre eles */
+nav ul li a:hover {
+  border-bottom: 3px solid rgba(187, 27, 83, 0.712); /* Adiciona uma borda inferior colorida */
+}
+
+/* Estilos para as seções do documento */
+section {
+  padding:0; /* Define um espaço entre as seções */
+  text-align: center;
+}
+
+
+h1 {
+  color: #813263;
+  text-align: center;
+  font-weight: bold;
+  margin: 0  2px;
+  padding: 0px;
+
+
+}
+
+
+h4 {
+  color: #000000;
+  text-align:center;
+  margin-left: 10%; 
+  margin-right: 10%;
+  margin-top: 2%;
+  text-align: left; /* Alinha o texto à esquerda */
+  margin-left: auto; /* Centraliza horizontalmente */
+  margin-right: auto; /* Centraliza horizontalmente */
+  max-width: 800px;
+}
+
+
+h6 {
+  color: #813263;
+  text-align:center;
+  margin-left: 10%; 
+  margin-right: 10%;
+  margin-top: 2%;
+  margin-left: auto; /* Centraliza horizontalmente */
+  margin-right: auto; /* Centraliza horizontalmente */
+  max-width: 800px; 
+  font-size:larger;
+
+}
+  
+/* Estilos para a imagem de fundo ''formação'' */
+.foto-diploma {
+  height: 90px;
+  width:  90px;
+  margin: 2% auto;
+  padding: 20px;
+  align-items: center;
+}
+
+/* Estilos para a imagem de fundo ''portfólio'' */
+.foto-projeto {
+  height: 90px;
+  width:  90px;
+  margin: 2% auto;
+  padding: 20px;
+  align-items: center;
+}
+
+
+
+/* Estilos para o formulário de contato */
+form {
+  max-width: 400px; 
+  margin: 0 auto; 
+  text-align: left; 
+}
+
+/* Estilos para rótulos do formulário */
+label {
+  display: block; 
+  margin-bottom: 5px; 
+  color: #333; 
+}
+
+/* Estilos para campos de entrada de texto e área de texto */
+input[type="text"],input[type="email"],textarea {
+  width: 100%;
+  padding: 10px; 
+  margin-bottom: 15px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+}
+
+/* Estilos para botões de envio */
+input[type="submit"] {
+  background-color: #9030cf;
+  color: #140909; 
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+/* Estilos para botões de envio quando o mouse está sobre eles */
+input[type="submit"]:hover {
+  background-color: #49dbdb; /* Define cor de fundo ao passar o mouse */
+}
+
+/* Estilos para o botão de rolagem para cima */
+#container {
+  position: fixed; /* Mantém o botão fixo na página */
+}
+ 
+/* Estilos para o botão de rolagem para baixo */
+#scrollButton {
+  position: fixed;
+  bottom: 60px;
+  right: 20px; 
+  display: none;
+}
+
+/* Estilos para o botão de rolagem para baixo quando o mouse está sobre eles */
+#scrollButton img {
+  height: 66px; 
+  width: 100px; 
+  cursor: pointer;
+}
+
+/* Estiliza o rodapé da página */
+.rodape {
+  max-width: 100%;
+  display: flex; /* Exibe elementos como flexíveis */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center;
+  background-color: rgba(221,89,133,0.199); /* Define cor de fundo com transparência */
+  color: black; 
+  margin-bottom:0;
+  text-align: center;
+  padding: 6px;
+  box-shadow: #000000;
+  font-family: Andale Mono, monospace;
+  font-size: 19px;
+  font-weight:700;
+
+
+} 
+   /* fim*/

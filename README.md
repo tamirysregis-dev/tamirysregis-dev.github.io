@@ -3,5 +3,5 @@ O projeto consiste na elaboração de um portifólio pessoal no formato de pagin
 com pelo menos 4 links, sendo eles:
  - Sobre mim
  - Formação e Línguas
- - Portifólio e Redes Sociais
+ - Portifólio
  - Contato
